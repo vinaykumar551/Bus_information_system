@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Page</title>
+    <link rel="stylesheet" type="text/css" href="css2/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Feedback Form</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="c">
+                <label for="gender">How satisfied were you with our services?</label>
+                <div>
+                  <label for="Excllent" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="feed"
+                      value="Excellent"
+                      id="feed"
+                    />Excellent</label
+                  >
+                  <label for="Good" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="feed"
+                      value=Good"
+                      id="feed"
+                    />Good</label
+                  >
+                  <label for="Average" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="feed"
+                      value="Average"
+                      id="feed"
+                    />Average</label
+                  >
+                  <label for="poor" class="radio-inline"
+                  ><input
+                    type="radio"
+                    name="feed"
+                    value="Poor"
+                    id="feed"
+                  />Poor</label
+                >
+                </div>
+              </div>
+              
+              <div class="c">
+                <label for="gender">How satisfied were you with our services concerning drivers?</label>
+                <div>
+                  <label for="Excllent" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="feed1"
+                      value="Excellent"
+                      id="feed1"
+                    />Excellent</label
+                  >
+                  <label for="Good" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="feed1"
+                      value="Good"
+                      id="feed1"
+                    />Good</label
+                  >
+                  <label for="Average" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="feed1"
+                      value="Average"
+                      id="feed1"
+                    />Average</label
+                  >
+                  <label for="poor" class="radio-inline"
+                  ><input
+                    type="radio"
+                    name="feed1"
+                    value="Poor"
+                    id="feed1"
+                  />Poor</label
+                >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="firstName">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="Name"
+                  placeholder="Enter name" required
+                />
+              </div>
+              <div class="form-group">
+                <label for="roll">Roll Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="roll"
+                  name="roll"
+                  placeholder="Enter roll number" required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter email address" required
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                  placeholder="Enter mobile number"
+                  pattern="[0-9]{10}" required
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">If you have specific feed back please share with us.</label>
+                <input
+                  type="textarea"
+                  class="form-control"
+                  id="lastName"
+                  name="feedback"
+                  placeholder="Write your feedback here"
+                />
+              </div>
+              <input type="submit" onclick="check()" class="btn btn-primary"  />
+            </form>
+          </div>
+          
+        </div>
+      </div>
+  </div>
+  <script>
+    function check(){
+      var a=getElementIdBy('feed');
+      var b=getElementIdBy('feed1');
+      var c=getElementIdBy('firstName');
+      var d=getElementIdBy('roll');
+      var e=getElementIdBy('email');
+      var f=getElementIdBy('number');
+      var g=getElementIdBy('lastName');
+      if(a.length!=0 && b.length!=0 &&  c.length!=0 && d.length!=0 && e.length!=0 && f.length!=0 && g.length!=0 ))
+      {
+      alert('Thank you for feed back');
+      return false;
+    }
+    else{
+      alert('Fill All The Fields');
+    }
+  }
+  </script>
+</html>

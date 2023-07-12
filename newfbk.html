@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Sri vasavi Bus Information System</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css1/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css1/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css1/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css1/custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+        <style>
+        .container {
+          position: relative;
+          width: 100%;
+          max-width: 400px;
+        }
+        
+        .container .btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          background-color:red;
+          color: white;
+          font-size: 25px;
+          padding: 50px 50px;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          text-align: center;
+        }
+        
+        .container .btn:hover {
+          background-color: black;
+          color: white;
+        }
+        </style>
+
+</head>
+<body class="host_version"> 
+   
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="nav1.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index1.html">Home</a></li>
+						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Login </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="home.html">Admin</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="fbk.html">Feedback</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="select.html" ><span>BusInfo
+                        </span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+    <div>
+        <div class="contactbg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="contacttitlepage">
+                            <h2>Bus Information</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading text-center">
+              <h1>Feedback Form</h1>
+            </div>
+            <div class="panel-body">
+              <form action="connect.php" method="post">
+                <div class="c">
+                  <label for="gender">How satisfied were you with our services?</label>
+                  <div>
+                    <label for="Excllent" class="radio-inline"
+                      ><input
+                        type="radio"
+                        name="feed"
+                        value="Excellent"
+                        id="male"
+                      />Excellent</label
+                    >
+                    <label for="Good" class="radio-inline"
+                      ><input
+                        type="radio"
+                        name="feed"
+                        value=Good"
+                        id="female"
+                      />Good</label
+                    >
+                    <label for="Average" class="radio-inline"
+                      ><input
+                        type="radio"
+                        name="feed"
+                        value="Average"
+                        id="others"
+                      />Average</label
+                    >
+                    <label for="poor" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="feed"
+                      value="Poor"
+                      id="female"
+                    />Poor</label
+                  >
+                  </div>
+                </div>
+                
+                <div class="c">
+                  <label for="gender">How satisfied were you with our services concerning drivers?</label>
+                  <div>
+                    <label for="Excllent" class="radio-inline"
+                      ><input
+                        type="radio"
+                        name="feed1"
+                        value="Excellent"
+                        id="male"
+                      />Excellent</label
+                    >
+                    <label for="Good" class="radio-inline"
+                      ><input
+                        type="radio"
+                        name="feed1"
+                        value="Good"
+                        id="female"
+                      />Good</label
+                    >
+                    <label for="Average" class="radio-inline"
+                      ><input
+                        type="radio"
+                        name="feed1"
+                        value="Average"
+                        id="others"
+                      />Average</label
+                    >
+                    <label for="poor" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="feed1"
+                      value="Poor"
+                      id="female"
+                    />Poor</label
+                  >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="firstName">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    name="Name"
+                    placeholder="Enter name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="roll">Roll Number</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="roll"
+                    placeholder="Enter roll number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email address"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="number">Phone Number</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="number"
+                    name="number"
+                    placeholder="Enter mobile number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">If you have specific feed back please share with us.</label>
+                  <input
+                    type="textarea"
+                    class="form-control"
+                    id="lastName"
+                    name="feedback"
+                    placeholder="Write your feedback here"
+                  />
+                </div>
+                <input type="submit" class="btn btn-primary" />
+              </form>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+</body>
+</html>
